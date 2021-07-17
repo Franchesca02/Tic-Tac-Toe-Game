@@ -1,42 +1,18 @@
+
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    /* font-family: 'Itim', cursive; */
 }
 .background {
-    background-color: rgb(185, 131, 50);
+    background-color: #412505;
     height: 100vh;
-    padding: 2px;
+    padding-top: 1px;
+}
+h1 {
+    color: brown;
 }
 .title {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 8px;
-    color: orange;
-}
-.title {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 10%;
-}
-.players {
-    text-align: center;
-    font-size: 17px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    color: white;
-}
-.conceal {
-    display: none;
-}
-.container {
-    display: grid;
-    max-width: 200px;
-    margin: 0 auto;
-    grid-template-columns: 30%,30%,30%;
-    grid-template-rows: 30%,30%,30%;
-}
-.inner {
     display: flex;
     min-width: 100px;
     min-height: 100px;
@@ -45,31 +21,72 @@ body {
     justify-content: center;
     align-items: center;
 }
-.playerD {
-    color: seagreen;
+
+.display {
+    color: rgb(196, 184, 184);
+    font-size: 25px;
+    text-align: center;
+    /* margin-top: 1em; */
+    margin-bottom: 1em;
 }
-.playero {
-    color: slateblue;
+
+.hide {
+    display: none;
 }
-.control {
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    background-color: rgba(207, 102, 63, 0.829);
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 1px solid rgb(196, 184, 184);
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: rgb(20, 83, 57);
+}
+
+.playerO {
+    color: #af064c;
+}
+
+.controls {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
-.control button{
-    color: rgb(71, 9, 9);
+
+.controls button {
+    color: rgb(196, 184, 184);
+    width: 100px;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 15px;
     border: none;
-    font-size: 20px;
-    margin-left: 1em;
+    font-size: 15px;
+    text-align: center;
+    /* margin-left: 1em; */
     cursor: pointer;
 }
+
 .restart {
-    background-color: slateblue;
+    background-color: #498AFB;
 }
-#refresh {
-    background-color: turquoise;
+
+#reset {
+    background-color: rgb(20, 83, 57);
 }
